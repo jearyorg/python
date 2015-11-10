@@ -17,9 +17,9 @@ def txt_wrap_by(start_str, end, html):
 
 if __name__ == "__main__":
       #u='http://home.artsbj.com/home.php?mod=space&uid=1&do=profile'
-      guanli='http://bbs.dvbcn.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=1"'     
+      guanli='http://example.com/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=1"'     
       for x in xrange(1,1000):
-         html = get_url('http://bbs.dvbcn.com/home.php?mod=space&uid='+str(x)+'&do=profile')               
+         html = get_url('http://example.com/home.php?mod=space&uid='+str(x)+'&do=profile')               
          if guanli in html:
             print txt_wrap_by('<h2 class="mbn">','<',html)+"-"+str(x)
          else:
